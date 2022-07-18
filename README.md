@@ -12,6 +12,10 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 Site published at: https://front-end-by-rimantas.github.io/39-grupe-portfolio-personal/
 
+# OG Design
+
+https://preview.colorlib.com/theme/personal/
+
 ## Project features
 
 -   Github pages
