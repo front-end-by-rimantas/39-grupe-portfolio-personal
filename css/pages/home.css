@@ -14,7 +14,17 @@
 /* CUSTOM STYLE BELOW THIS COMMENT LINE */
 
 /* hero start */
+.container {
+    background-color: #f9f9ff;
+    margin-top: 60px;
+}
 
+.title {
+    text-transform: uppercase;
+}
+.name {
+    text-transform: uppercase;
+}
 /* hero end */
 
 
