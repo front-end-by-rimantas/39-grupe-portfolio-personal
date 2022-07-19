@@ -4,15 +4,17 @@
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 [![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)
 
-# Daniels portfolio
+# It's Personal
 
-_39 group website project_
+_39 #1 group website project_
 
-This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
+This project is for educational porpuses only. Pull request are welcome, but priority for project authors!
 
-Site published at: https://front-end-by-rimantas.github.io/39-grupe-portfolio/
+Site published at: https://front-end-by-rimantas.github.io/39-grupe-portfolio-personal/
 
-Design: http://www.innovationplans.com/idesign/daniels/particles.html
+# OG Design
+
+https://preview.colorlib.com/theme/personal/
 
 ## Project features
 
@@ -30,3 +32,10 @@ Design: http://www.innovationplans.com/idesign/daniels/particles.html
 ## Authors
 
 Rimantas: [Github](https://github.com/belauzas)
+Inga: [Github](https://github.com/Inga-Slamaite)
+Sergei: [Github](https://github.com/Torden11)
+Ugnė: [Github](https://github.com/ugnekiev)
+Jūratė [Github](https://github.com/sjurate) 
+Eimantas: [Github](https://github.com/eimazil)
+Jonas: [Github](https://github.com/lzraj)
+
