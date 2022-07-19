@@ -29,7 +29,14 @@
 
 
 /* stats start */
+.container {
+    background: var(--main-gradient);
+}
 
+.col-3 * {
+    color: white;
+    text-align: center;
+}
 /* stats end */
 
 
