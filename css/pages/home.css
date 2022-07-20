@@ -29,14 +29,16 @@
 
 
 /* stats start */
-.container {
+.stats {
     background: var(--main-gradient);
+    padding: 100px;
 }
 
-.col-3 * {
+.stats  * {
     color: white;
     text-align: center;
-}
+    }
+
 /* stats end */
 
 
