@@ -22,9 +22,21 @@
 .title {
     text-transform: uppercase;
 }
+
 .name {
     text-transform: uppercase;
 }
+
+.description {
+    padding: 25px 0;
+}
+
+.btn {
+    font-size: 14px;
+    text-decoration: none;
+    padding: 12px 24px;
+}
+
 /* hero end */
 
 
