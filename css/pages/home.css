@@ -39,7 +39,18 @@
 
 
 /* feedback start */
+.feedback-title {
+    text-align: center;
+}
 
+.feedback-content {
+    text-align: center;
+}
+
+/*.card1 {
+    display: flex;
+
+}
 /* feedback end */
 
 
