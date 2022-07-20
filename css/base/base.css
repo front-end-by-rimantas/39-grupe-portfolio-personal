@@ -51,3 +51,7 @@ p {
   color: var(--main-grey);
   line-height: 1.7;
 }
+
+.text-align-center {
+  text-align: center;
+}
