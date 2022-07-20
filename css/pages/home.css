@@ -63,8 +63,10 @@
 }
 
 .services > .row > .single-service:hover .service-icon {
-    color: var(--main-purple);
     transition: all 0.2s;
+    background: var(--main-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* services end */
