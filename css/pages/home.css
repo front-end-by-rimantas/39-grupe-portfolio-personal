@@ -16,9 +16,8 @@
 /* hero start */
 .container {
     background-color: #f9f9ff;
-    margin-top: 60px;
 }
-
+s
 .title {
     text-transform: uppercase;
 }
@@ -35,7 +34,15 @@
     font-size: 14px;
     text-decoration: none;
     padding: 12px 24px;
+
 }
+
+@media (min-width: 768px) {
+    .row {
+      
+    }
+}
+
 
 /* hero end */
 
