@@ -16,9 +16,11 @@
 /* hero start */
 .container {
     background-color: #f9f9ff;
+    padding-top: 20px;
 }
-s
+
 .title {
+    margin-top: 0px;
     text-transform: uppercase;
 }
 
@@ -34,13 +36,20 @@ s
     font-size: 14px;
     text-decoration: none;
     padding: 12px 24px;
-
 }
 
 @media (min-width: 768px) {
-    .row {
-      
+    .title {
+        margin-top: 105px;
     }
+    
+}
+@media (min-width: 992px) {
+    h1 {
+        font-size: 64px;
+    }
+
+    
 }
 
 
