@@ -35,6 +35,44 @@
 
 /* projects start */
 
+.projects > .heading {
+    text-align: center;
+    padding: 70px 0px 70px;
+}
+
+.projects .gallery {
+    padding: 25px 0px 70px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.imgbox {
+    display: inline-block;
+    padding: 30px;
+}
+
+.projects .links {
+    display: flex;
+    justify-content: center;    
+    gap: 1.5em;
+}
+
+.projects .links > a {
+    word-spacing: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: var(--main-black);
+}
+
+a:hover {
+    color: var(--main-purple)
+}
+
 /* projects end */
 
 
