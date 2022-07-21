@@ -115,4 +115,13 @@
 
 /* brands start */
 
+.static {
+    border: 1px solid red;
+    background: var(--main-gradient);
+    padding: 90px;
+    
+
+}
+
+
 /* brands end */
