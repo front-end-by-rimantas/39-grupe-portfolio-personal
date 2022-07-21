@@ -29,6 +29,22 @@
 
 
 /* stats start */
+.stats {
+    background: var(--main-gradient);
+    padding: 100px;
+}
+
+.stats  * {
+    color: white;
+    text-align: center;
+    }
+
+
+@media (max-width: 768px) {
+.stats  > .row > .stats-content {
+    margin-bottom: 32px;
+    }
+}
 
 /* stats end */
 
