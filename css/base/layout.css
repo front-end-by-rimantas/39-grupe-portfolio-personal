@@ -39,9 +39,9 @@
     margin: 0;
 }
 
-.row * {
+/*.row * {
     border: 2px solid red;
-}
+}*/
 
 .visible {
     display: inline-block !important;
