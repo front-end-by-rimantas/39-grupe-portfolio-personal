@@ -29,6 +29,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: var(--main-black);
+  transition: all 0.3s;
 }
 
 .header .navigation-link:hover {
