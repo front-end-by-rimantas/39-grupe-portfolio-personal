@@ -25,6 +25,50 @@
 
 /* services start */
 
+.services {
+    text-align: center;
+}
+
+.services > .row > .services-tittle {
+    margin-bottom: 2px;
+}
+
+.services > .row > .services-description {
+    margin-bottom: 64px;
+}
+
+.services > .row > .single-service > .service-icon {
+    font-size: 32px;
+    color: var(--main-black);
+    margin-bottom: 24px;
+}
+
+.services > .row > .single-service > a {
+    margin-bottom: 24px;
+    text-decoration: none;
+    color: var(--main-black);
+}
+
+.services > .row > .single-service > a > h3 {
+    margin-bottom: 24px;
+}
+
+.services > .row > .single-service .service-p {
+    margin-bottom: 32px;
+}
+
+.services > .row > .single-service:hover a {
+    color: var(--main-purple);
+    transition: all 0.4s;
+}
+
+.services > .row > .single-service:hover .service-icon {
+    transition: all 0.2s;
+    background: var(--main-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* services end */
 
 
