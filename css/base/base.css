@@ -9,6 +9,7 @@
   --main-grey: #777;
   --main-purple: #8490ff;
   --main-gradient: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  --light-purple: #f9f9ff;
 }
 
 body,
@@ -50,4 +51,8 @@ p {
   font-weight: 300;
   color: var(--main-grey);
   line-height: 1.7;
+}
+
+.section-description {
+  margin-bottom: 70px;
 }
