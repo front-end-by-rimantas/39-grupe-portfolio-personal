@@ -87,6 +87,11 @@
     position: relative;
 }
 
+.card:hover {
+    cursor: pointer;
+    color: var(--main-purple);
+}
+
 .cards > .arrow {
     color: var(--main-grey);
     -webkit-text-stroke: 1px white;
