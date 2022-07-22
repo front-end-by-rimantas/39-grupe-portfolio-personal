@@ -41,7 +41,7 @@
 /* feedback start */
 
 .feedback {
-    background-color: #f7f7f7;
+    background-color: #f9f9ff;
 }
 .feedback-title {
     text-align: center;
@@ -52,6 +52,7 @@
     text-align: center;
     margin-bottom: 64px;
 }
+
 
 .container > .row > .card {
     background-color: white;
@@ -82,18 +83,118 @@
     margin-left: 59px;
 }
 
-.container > .row > .card-2::after {
-    content: up;
-    padding: 12px;
-    font-size: 16px;
-    color: black;
+.cards {
+    position: relative;
 }
+
+.cards > .arrow {
+    color: var(--main-grey);
+    -webkit-text-stroke: 1px white;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: absolute;
+    top: 25%;
+    right: -2%;
+    box-shadow: -12px 6px 21px rgba(183, 190, 252, 0.3);
+}
+
+.cards > .arrow > .arrow-up {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    padding: 12px;
+    background-color:white;
+}
+
+.cards > .arrow > .arrow-down {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    padding: 12px;
+    background-color: white;
+}
+
+.cards > .arrow > .arrow-up:hover {
+   cursor: pointer;
+   color: white;
+   background-color: var(--main-purple);
+   transition: all 0.3s;
+}
+
+.cards > .arrow > .arrow-down:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--main-purple);
+    transition: all 0.3s;
+ }
+
 
 @media (max-width: 768px) {
     .card-2 {
         display: none;
     }
+
+    .cards > .arrow {
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+        position: absolute;
+        top: 106%;
+        right: 43%;
+        
+    }
+
+    .cards > .arrow > .arrow-up {
+       box-shadow: -12px 6px 21px rgba(183, 190, 252, 0.3);
+    }
+     
+     .cards > .arrow > .arrow-down {
+        box-shadow: -12px 6px 21px rgba(183, 190, 252, 0.3);
+    }
+
 }
+
+@media (max-width: 992px) {
+    .cards > .arrow {
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+        position: absolute;
+        top: 106%;
+        right: 44%;
+    }
+
+    .cards > .arrow > .arrow-up {
+        box-shadow: -12px 6px 21px rgba(183, 190, 252, 0.3);
+     }
+      
+      .cards > .arrow > .arrow-down {
+         box-shadow: -12px 6px 21px rgba(183, 190, 252, 0.3);
+     }
+}
+
+@media (min-width: 992px) {
+    .cards > .arrow {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        position: absolute;
+        top: 28%;
+        right: -3%;
+        }
+}    
+
+@media (min-width: 1200px) {
+    .cards > .arrow {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        position: absolute;
+        top: 25%;
+        right: -2%;
+        }
+}    
 
 
 /* feedback end */
