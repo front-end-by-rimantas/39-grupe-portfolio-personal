@@ -39,6 +39,14 @@
     padding: 12px 24px;
 }
 
+@media (min-width: 576px) {
+    .block {
+        margin: 0;
+        width: 100%;
+
+}
+}
+
 @media (min-width: 768px) {
     .title {
         margin-top: 105px;
