@@ -169,6 +169,7 @@
 }
 
 .blog-post-tittle {
+    color: var(--main-black);
     margin-top: 32px;
     margin-bottom: 12px;
     transition: all 0.4s;
