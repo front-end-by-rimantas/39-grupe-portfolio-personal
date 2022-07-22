@@ -115,13 +115,32 @@
 
 /* brands start */
 
+
 .static {
     border: 1px solid red;
     background: var(--main-gradient);
-    padding: 90px;
+    padding: 70px 0;
     
+}
+/* .static > .brands {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+.unique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px ;
 
 }
+
+.row * {
+    border: 1px solid green;
+}
+
+
+
 
 
 /* brands end */
