@@ -9,6 +9,7 @@
   --main-grey: #777;
   --main-purple: #8490ff;
   --main-gradient: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  --section-background: #f9f9ff;
 }
 
 body,
@@ -39,7 +40,6 @@ h3 {
   font-size: 18px;
   font-weight: 600;
   text-transform: capitalize;
-
 }
 
 h4 {
