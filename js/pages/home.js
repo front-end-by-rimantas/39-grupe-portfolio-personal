@@ -1,3 +1,5 @@
+import { Stats } from "../components/Stats.js";
+
 /* header start */
 
 /* header end */
@@ -15,6 +17,8 @@
 /* services end */
 
 /* stats start */
+const stats = new Stats();
+stats.render();
 
 /* stats end */
 
