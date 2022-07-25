@@ -8,8 +8,10 @@
   --main-black: #222;
   --main-grey: #777;
   --main-purple: #8490ff;
-  --main-bule: #62bdfc;
+  --main-blue: #62bdfc;
+  --section-background: #f9f9ff;
   --main-gradient: linear-gradient(to right, #8490ff, #62bdfc);
+
 }
 
 body,
@@ -33,10 +35,13 @@ h1 {
 h2 {
   font-size: 36px;
   font-weight: 600;
+  text-transform: capitalize;
 }
+
 h3 {
   font-size: 18px;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 h4 {
@@ -51,4 +56,8 @@ p {
   font-weight: 300;
   color: var(--main-grey);
   line-height: 1.7;
+}
+
+.text-align-center {
+  text-align: center;
 }
