@@ -7,7 +7,9 @@
 :root {
   --main-black: #222;
   --main-grey: #777;
-  --main-gradient: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  --main-purple: #8490ff;
+  --main-bule: #62bdfc;
+  --main-gradient: linear-gradient(to right, #8490ff, #62bdfc);
 }
 
 body,
