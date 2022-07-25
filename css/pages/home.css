@@ -4,7 +4,7 @@
 @import "../base/layout.css";
 /* 3rd-party */
 
-@import '../3rd-party/font-awesome.min.css';
+@import "../3rd-party/font-awesome.min.css";
 
 /* components */
 @import "../components/button.css";
@@ -17,96 +17,193 @@
 
 /* hero end */
 
-
 /* about start */
 
 /* about end */
 
-
 /* services start */
 
 .services {
-    text-align: center;
+  text-align: center;
 }
 
 .services > .row > .services-tittle {
-    margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
 .services > .row > .services-description {
-    margin-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 .services > .row > .single-service > .service-icon {
-    font-size: 32px;
-    color: var(--main-black);
-    margin-bottom: 24px;
+  font-size: 32px;
+  color: var(--main-black);
+  margin-bottom: 24px;
 }
 
 .services > .row > .single-service > a {
-    margin-bottom: 24px;
-    text-decoration: none;
-    color: var(--main-black);
+  margin-bottom: 24px;
+  text-decoration: none;
+  color: var(--main-black);
 }
 
 .services > .row > .single-service > a > h3 {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .services > .row > .single-service .service-p {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .services > .row > .single-service:hover a {
-    color: var(--main-purple);
-    transition: all 0.4s;
+  color: var(--main-purple);
+  transition: all 0.4s;
 }
 
 .services > .row > .single-service:hover .service-icon {
-    transition: all 0.2s;
-    background: var(--main-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  transition: all 0.2s;
+  background: var(--main-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* services end */
 
-
 /* stats start */
 .stats {
-    background: var(--main-gradient);
-    padding: 100px;
+  background: var(--main-gradient);
+  padding: 100px;
 }
 
-.stats  * {
-    color: white;
-    text-align: center;
-    }
-
+.stats * {
+  color: white;
+  text-align: center;
+}
 
 @media (max-width: 768px) {
-.stats  > .row > .stats-content {
+  .stats > .row > .stats-content {
     margin-bottom: 32px;
-    }
+  }
 }
 
 /* stats end */
-
 
 /* projects start */
 
 /* projects end */
 
-
 /* feedback start */
 
 /* feedback end */
 
-
 /* plan start */
 
-/* plan end */
+.plan .pricing-container > .pricing-box {
+  z-index: 1;
+  margin: 10px;
+  width: calc(100% - 20px);
+  background-color: var(--section-background);
+  padding: 32px 10px;
+  cursor: pointer;
+  /* transition: ease-in all 0.2s; */
+}
 
+.section-description {
+  margin-bottom: 64px;
+}
+
+.plan-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  background-color: rgba(132, 144, 255, 0.1);
+  border: 30px solid rgba(132, 144, 255, 0.1);
+  margin-bottom: 24px;
+}
+
+.plan-name {
+  margin-bottom: 12px;
+}
+
+.plan-target-client,
+.benefits-box {
+  margin-bottom: 24px;
+}
+
+.benefit {
+  padding: 12px 0;
+}
+
+.benefit:first-child {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.benefit {
+  border-bottom: 1px solid #eee;
+}
+
+.btn.cta-plan {
+  width: 100%;
+  font-size: 14px;
+  color: var(--main-black);
+  font-weight: 600;
+  background-color: #fff;
+  background-image: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: none;
+  display: none;
+  text-decoration: none;
+}
+/* HOVER EFFECT START */
+.pricing-box:hover .btn.cta-plan {
+  display: inline-block;
+}
+.pricing-box:hover .price {
+  display: none;
+}
+
+.plan .pricing-container > .pricing-box:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  background: linear-gradient(90deg, #8490ff 0%, #62bdfc 100%);
+  color: #fff;
+}
+
+.pricing-box:hover .plan-number {
+  border-color: rgba(255, 255, 255, 0.21);
+  background-color: transparent;
+}
+
+.pricing-box:hover p {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .plan .pricing-container > .pricing-box {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .plan .pricing-container > .pricing-box {
+    width: 25%;
+  }
+}
+/* HOVER EFFECT END */
+
+/* plan end */
 
 /* blog start */
 .blog-posts {
@@ -212,8 +309,9 @@
     }
 }
 
-/* blog start */
+/* blog end */
 
+/* blog start */
 
 /* brands start */
 
