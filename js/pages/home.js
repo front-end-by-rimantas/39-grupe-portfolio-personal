@@ -1,4 +1,5 @@
 import { Stats } from "../components/Stats.js";
+import { statsData } from "../data/statsData.js";
 
 /* header start */
 
@@ -17,8 +18,15 @@ import { Stats } from "../components/Stats.js";
 /* services end */
 
 /* stats start */
-const stats = new Stats();
-stats.render();
+new Stats('#stats_block', statsData);
+
+/*Galima naudoti vietoje init Stats.js faile
+const stats = new Stats('#stats_block');
+if (stats.isValidSelector()
+    && stats.findTargetElement()) {
+    stats.render();
+    }*/
+
 
 /* stats end */
 
