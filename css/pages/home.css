@@ -20,6 +20,7 @@
     padding-bottom: 0;
 }
 
+
 .title {
     margin-top: 0px;
     text-transform: uppercase;
@@ -41,10 +42,8 @@
 
 @media (min-width: 576px) {
     .block {
-        margin: 0;
         width: 100%;
-
-}
+    }
 }
 
 @media (min-width: 768px) {
@@ -52,18 +51,6 @@
         margin-top: 105px;
     }
 
-}
-    
-@media (min-width: 992px) {
-    h1 {
-        font-size: 48px;
-    }    
-}
-
-@media (min-width: 1189px) {
-    h1 {
-        font-size: 48px;
-    }       
 }
 
 @media (min-width: 1400px) {
