@@ -101,7 +101,7 @@
     position: absolute;
     top: 25%;
     right: -2%;
-    box-shadow: -12px 6px 21px rgba(183, 190, 252, 0.3);
+    box-shadow: -12px 6px 21px #E0E0E5;
 }
 
 .cards > .arrow > .arrow-up {
@@ -155,16 +155,21 @@
     }
 
     .cards > .arrow > .arrow-up {
-       box-shadow: -12px 6px 21px rgba(183, 190, 252, 0.3);
+       box-shadow: -12px 6px 21px #E0E0E5;
     }
      
      .cards > .arrow > .arrow-down {
-        box-shadow: -12px 6px 21px rgba(183, 190, 252, 0.3);
+        box-shadow: -12px 6px 21px #E0E0E5;
     }
 
 }
 
 @media (max-width: 992px) {
+
+    .feedback {
+        padding-bottom: 152px;
+    }
+
     .cards > .arrow {
         display: flex;
         flex-direction: row;
@@ -175,15 +180,20 @@
     }
 
     .cards > .arrow > .arrow-up {
-        box-shadow: -12px 6px 21px rgba(183, 190, 252, 0.3);
+        box-shadow: -12px 6px 21px #E0E0E5;
      }
       
       .cards > .arrow > .arrow-down {
-         box-shadow: -12px 6px 21px rgba(183, 190, 252, 0.3);
+         box-shadow: -12px 6px 21px #E0E0E5;
      }
 }
 
 @media (min-width: 992px) {
+
+    .feedback {
+        padding-bottom: 128px;
+    }
+
     .cards > .arrow {
         display: flex;
         flex-direction: column;
