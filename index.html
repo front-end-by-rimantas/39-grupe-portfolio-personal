@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/pages/home.css" />
@@ -17,7 +17,47 @@
   <body>
 
    <!-- header start -->
-
+<header class="container header">
+      <div class="row">
+        <div class="col-12 flex-container">
+        <a class="header-logo-link" href="#"
+          ><img class="header-logo-img" src="./img/header/Logo.png" alt="Logo of Personal brand"
+        /></a>
+        <nav class="header-navigation hidden visible-lg">
+          <ul class="header-list">
+            <li class="list-item flex-align-center">
+              <a class="navigation-link" href="#">Home</a>
+            </li>
+            <li class="list-item flex-align-center">
+              <a class="navigation-link" href="#">About</a>
+            </li>
+            <li class="list-item flex-align-center">
+              <a class="navigation-link" href="#">Services</a>
+            </li>
+            <li class="list-item flex-align-center">
+              <a class="navigation-link" href="#">Portfolio</a>
+            </li>
+            <li class="list-item flex-align-center">
+              <a class="navigation-link" href="#">Pricing</a>
+            </li>
+            <li class="list-item flex-align-center">
+              <a class="navigation-link" href="#">Blog <span class="fa fa-chevron-down chevron-down"></span></a>
+            </li>
+            <li class="list-item flex-align-center">
+              <a class="navigation-link" href="#">Pages <span class="fa fa-chevron-down chevron-down"></span></a>
+            </li>
+            <li class="list-item flex-align-center">
+              <a class="navigation-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      <div class="navigation-hamburger visible hidden-lg">
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+      </div>
+      </div>
+    </header>
    <!-- header end -->
     
     
@@ -32,12 +72,86 @@
     
     
    <!-- services start -->
+
+   <section class="container services">
+    <div class="row">
+      <h2 class="services-tittle col-12 col-sm-12 col-md-10 col-lg-8 ml-md-1 ml-lg-2">My offered services</h2>
+    </div>
+    <div class="row">
+      <p class="services-description col-12 col-sm-12 col-md-10 col-lg-8 ml-md-1 ml-lg-2">At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
+    </div>
+    <div class="row">
+      <div class="single-service col-12 col-sm-12 col-md-6 col-lg-4">
+        <div class="fa fa-pie-chart service-icon""></div>
+        <a href="#">
+          <h3>Web design</h3>
+        </a>
+        <p class="service-p">“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”</p>
+      </div>
+      <div class="single-service col-12 col-sm-12 col-md-6 col-lg-4">
+        <div class="fa fa-desktop service-icon"></div>
+        <a href="#">
+          <h3>Web development</h3>
+        </a>
+        <p class="service-p">If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.</p>
+      </div>
+      <div class="single-service col-12 col-sm-12 col-md-6 col-lg-4">
+        <div class="fa fa-camera service-icon"></div>
+        <a href="#">
+          <h3>Photography</h3>
+        </a>
+        <p class="service-p">Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.</p>
+      </div>
+      <div class="single-service col-12 col-sm-12 col-md-6 col-lg-4">
+        <div class="fa fa-picture-o service-icon"></div>
+        <a href="#">
+          <h3>Clipping path</h3>
+        </a>
+        <p class="service-p">Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument.</p>
+      </div>
+      <div class="single-service col-12 col-sm-12 col-md-6 col-lg-4">
+        <div class="fa fa-tablet service-icon"></div>
+        <a href="#">
+          <h3>Apps interface</h3>
+        </a>
+        <p class="service-p">Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts.</p>
+      </div>
+      <div class="single-service col-12 col-sm-12 col-md-6 col-lg-4">
+        <div class="fa fa-rocket service-icon"></div>
+        <a href="#">
+          <h3>Graphic design</h3>
+        </a>
+        <p class="service-p">You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.</p>
+      </div>
+    </div>
+
+
+  </section>
     
    <!-- services end -->
     
     
    <!-- stats start -->
-    
+<section class="container stats"> 
+    <div class="row">
+      <div class="stats-content col-12 col-md-6 col-lg-3">
+        <h2 class="number">2536</h2>
+        <p class="counter-text">Projects completed</p>
+      </div>
+      <div class="stats-content col-12 col-md-6 col-lg-3">
+        <h2 class="number">6784</h2>
+        <p class="counter-text">Happy clients</p>
+      </div>
+      <div class="stats-content col-12 col-md-6 col-lg-3">
+        <h2 class="number">2239</h2>
+        <p class="counter-text">Cups of coffee</p>
+      </div>
+      <div class="stats-content col-12 col-md-6 col-lg-3">
+        <h2 class="number">434</h2>
+        <p class="counter-text">Real professionals</p>
+      </div>
+    </div>
+</section>
    <!-- stats end -->
     
     
@@ -52,7 +166,63 @@
     
     
    <!-- plan start -->
-    
+    <section class="container plan text-align-center">
+      <h2 class="col-12 section-name">Choose Your Plan</h2>
+      <p class="col-12 section-description">
+        When someone does something that they know that they shouldn’t do, did
+        they.
+      </p>
+      <div class="row pricing-container">
+        <div class="col-lg-3 pricing-box">
+          <div class="plan-number">01</div>
+          <h3 class="plan-name">Economy</h3>
+          <p class="plan-target-client">For the individuals</p>
+          <div class="benefits-box">
+            <p class="benefit">Secure Online Transfer</p>
+            <p class="benefit">Unlimited Styles for interface</p>
+            <p class="benefit">Reliable Customer Service</p>
+          </div>
+          <h2 class="price">&#163;199.00</h2>
+          <a href="#" class="btn cta-plan">Buy now</a>
+        </div>
+        <div class="col-lg-3 pricing-box">
+          <div class="plan-number">02</div>
+          <h3 class="plan-name">Business</h3>
+          <p class="plan-target-client">For the individuals</p>
+          <div class="benefits-box">
+            <p class="benefit">Secure Online Transfer</p>
+            <p class="benefit">Unlimited Styles for interface</p>
+            <p class="benefit">Reliable Customer Service</p>
+          </div>
+          <h2 class="price">&#163;299.00</h2>
+          <a href="#" class="btn cta-plan">Buy now</a>
+        </div>
+        <div class="col-lg-3 pricing-box">
+          <div class="plan-number">03</div>
+          <h3 class="plan-name">Premium</h3>
+          <p class="plan-target-client">For the individuals</p>
+          <div class="benefits-box">
+            <p class="benefit">Secure Online Transfer</p>
+            <p class="benefit">Unlimited Styles for interface</p>
+            <p class="benefit">Reliable Customer Service</p>
+          </div>
+          <h2 class="price">&#163;399.00</h2>
+          <a href="#" class="btn cta-plan">Buy now</a>
+        </div>
+        <div class="col-lg-3 pricing-box">
+          <div class="plan-number">04</div>
+          <h3 class="plan-name">Exclusive</h3>
+          <p class="plan-target-client">For the individuals</p>
+          <div class="benefits-box">
+            <p class="benefit">Secure Online Transfer</p>
+            <p class="benefit">Unlimited Styles for interface</p>
+            <p class="benefit">Reliable Customer Service</p>
+          </div>
+          <h2 class="price">&#163;499.00</h2>
+          <a href="#" class="btn cta-plan">Buy now</a>
+        </div>
+      </div>
+    </section>
    <!-- plan end -->
     
     
