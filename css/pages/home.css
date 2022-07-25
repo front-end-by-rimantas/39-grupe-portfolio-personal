@@ -136,6 +136,10 @@
 
 
 @media (max-width: 768px) {
+
+    .feedback {
+        padding-bottom: 152px;
+    }
     .card-2 {
         display: none;
     }
