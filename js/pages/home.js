@@ -18,6 +18,9 @@ import { Services } from "../data/servicesData.js";
 
 /* services start */
 
+const services = new Services();
+
+
 /* services end */
 
 /* stats start */
