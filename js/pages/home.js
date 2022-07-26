@@ -1,7 +1,7 @@
 
 
 import { Services } from "../components/Services.js";
-import { Services } from "../data/servicesData.js";
+import { servicesData } from "../data/servicesData.js";
 
 
 /* header start */
@@ -18,8 +18,7 @@ import { Services } from "../data/servicesData.js";
 
 /* services start */
 
-const services = new Services();
-
+new Services('#services_block');
 
 /* services end */
 
