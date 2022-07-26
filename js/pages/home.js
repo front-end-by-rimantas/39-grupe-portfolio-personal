@@ -18,7 +18,7 @@ import { servicesData } from "../data/servicesData.js";
 
 /* services start */
 
-new Services('#services_block');
+new Services('#services_block', servicesData);
 
 /* services end */
 
