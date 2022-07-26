@@ -315,4 +315,41 @@
 
 /* brands start */
 
+.brands {
+    width: 100%;
+    border: red 1px;
+
+}
+
+.brands.main {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #8490ff, #62bdfc);
+    /* background-color: #8490ff; */
+    width: 100%;
+    padding: 80px 0px;
+
+
+}
+
+.brandswrap {
+
+    height: 70px;
+    gap: 25px;
+
+}
+
+/* .brandswrap:hover .fa-binoculars {
+    display: block;
+} */
+
+/* .brandswrap.img:hover {
+    opacity: 50%;  
+} */
+
+.brandswrap a:hover {
+    opacity: 50%;  
+}
+
+
 /* brands end */
