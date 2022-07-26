@@ -329,11 +329,10 @@
     width: 100%;
     padding: 80px 0px;
 
-
 }
 
 .brandswrap {
-
+    opacity: 0.5; 
     height: 70px;
     gap: 25px;
 
@@ -348,7 +347,8 @@
 } */
 
 .brandswrap a:hover {
-    opacity: 50%;  
+    
+    opacity: 1;
 }
 
 
