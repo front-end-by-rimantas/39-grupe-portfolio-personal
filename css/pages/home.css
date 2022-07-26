@@ -4,7 +4,7 @@
 @import "../base/layout.css";
 /* 3rd-party */
 
-@import '../3rd-party/font-awesome.min.css';
+@import "../3rd-party/font-awesome.min.css";
 
 /* components */
 @import "../components/button.css";
@@ -17,86 +17,81 @@
 
 /* hero end */
 
-
 /* about start */
 
-
-
-
-.row.about {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+.container.about > .row {
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
-.about-inn {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-
+.about .about-title {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 32px;
 }
 
-    
-.about-details {
-    margin: 1em 0;
-    }
-    
-
-     
-.h4 {
-    margin-bottom: 35px;
+.about .about-details {
+  font-size: 20px;
+  margin-bottom: 40px;
 }
 
- .about-btn {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 24px;
-    font-size: 14px;
+.about .about-description {
+  margin-bottom: 32px;
+}
 
-    
-
+.about-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 24px;
+  font-size: 14px;
 }
 .about-img {
-    margin-top: 30;
-    box-shadow: 3px;
+  width: 100%;
+  box-shadow: 3px;
 }
 
+@media (min-width: 768px) {
+  .about > .row {
+    display: flex;
+  }
+  .img-container {
+    align-self: center;
+  }
+}
 
-
+@media (min-width: 992px) {
+  .about .about-details {
+    font-size: 36px;
+  }
+}
 
 /* about end */
-
 
 /* services start */
 
 /* services end */
 
-
 /* stats start */
 
 /* stats end */
-
 
 /* projects start */
 
 /* projects end */
 
-
 /* feedback start */
 
 /* feedback end */
-
 
 /* plan start */
 
 /* plan end */
 
-
 /* blog start */
 
 /* blog start */
-
 
 /* brands start */
 
