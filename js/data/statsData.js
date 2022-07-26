@@ -1,18 +1,18 @@
 const statsData = [
     {
-        number: 2536,
+        number: '2536',
         countertext: 'Projects completed', 
     },
     {
-        number: 6784,
+        number: '6784',
         countertext: 'Happy clients', 
     },
     {
-        number: 2239,
+        number: '2239',
         countertext: 'Cups of coffee', 
     },
     {
-        number: 434,
+        number: '434',
         countertext: 'Real professionals', 
     },
 ];
