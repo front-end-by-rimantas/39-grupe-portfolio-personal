@@ -100,7 +100,7 @@
     text-align: center;
 }
 
-img {
+.projects.img {
     width: 100%;
 }
 
@@ -145,11 +145,11 @@ img {
     display: block;
 }
 
-a:hover {
+.projects a:hover {
     color: var(--main-purple);
 }
 
-img:hover {
+.projects. img:hover {
     opacity: 20%;  
 }
 
