@@ -130,7 +130,7 @@
 .container > .row > .ml-11 {
   margin-left: var(--ml11);
 }
-
+@media (min-width: 576px) {
         width: var(--col1);
     }
     .container > .row > .col-sm-2 {
