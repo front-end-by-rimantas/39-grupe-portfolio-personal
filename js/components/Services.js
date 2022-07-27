@@ -46,10 +46,44 @@ class Services {
         return true ;
     }
 
+    isTrueObject(obj, keysCount = 1) {
+        if (typeof obj !== 'object'
+            || obj === null
+            || Array.isArray(obj)
+            || Object.keys(obj).length !== keysCount) {
+            return false;
+        }
+        return true;
+    }
+
+    isValidString(str, size = 20) {
+        if (typeof str !== 'string'
+            || str.trim() === ''
+            || str.trim().length > size) {
+            return false;
+        }
+        return true;
+    }
+
+    isValidServiceItem(item) {
+        if (this.isTrueObject(item, 3)
+            || this.isValidString(item.icon)
+            || this.isValidString(item.tittle)
+            || this.isValidString(item.desc, 100)) {
+            return true;
+        }
+        return false;
+    }
+
     render() {
 
         let servicesHTML = '';
         for (const serviceItem of this.data) {
+
+            if (!this.isValidServiceItem(serviceItem)) {
+                continue;
+            }
+
             servicesHTML += `<div class="single-service col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="fa fa-${serviceItem.icon} service-icon"></div>
             <a href="#">
@@ -59,7 +93,6 @@ class Services {
           </div>`;
         }
         this.DOM.innerHTML = servicesHTML; 
-
     }
 }
 
