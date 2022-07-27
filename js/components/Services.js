@@ -66,13 +66,14 @@ class Services {
     }
 
     isValidServiceItem(item) {
-        if (this.isTrueObject(item, 3)
-            || this.isValidString(item.icon)
-            || this.isValidString(item.tittle)
-            || this.isValidString(item.desc, 100)) {
-            return true;
+        if (!this.isTrueObject(item, 3)
+            || !this.isValidString(item.icon)
+            || !this.isValidString(item.tittle)
+            || !this.isValidString(item.desc, 150)
+            ) {
+            return false;
         }
-        return false;
+        return true;
     }
 
     render() {
