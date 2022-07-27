@@ -2,26 +2,50 @@ class Navigation {
   constructor(selector, data) {
     this.selector = selector;
     this.data = data;
+    this.DOM = null;
+
+    this.init();
+    this.enableMobileNav();
+    this.navigationShadow();
   }
 
-  renderDesktop() {
+  init() {
+    if (
+      !this.isValidSelector() ||
+      !this.findTargetElement() ||
+      !this.isValidData()
+    ) {
+      return false;
+    }
+    this.render();
+  }
+
+  isValidSelector() {
+    if (typeof this.selector !== "string" || this.selector === "") {
+      return false;
+    }
+    return true;
+  }
+
+  findTargetElement() {
+    this.DOM = document.querySelector(this.selector);
+    return !!this.DOM;
+  }
+
+  isValidData() {
+    if (!Array.isArray(this.data)) {
+      return false;
+    }
+    return true;
+  }
+
+  render() {
     let HTML = "";
 
     for (const dataItem of this.data) {
-      HTML += `<a class="navigation-link flex-align-center" href="${dataItem.href}">${dataItem.text}</a>`;
+      HTML += `<a class="${dataItem.class}" href="${dataItem.href}">${dataItem.text}</a>`;
     }
-    const DOM = document.querySelector(this.selector);
-    DOM.innerHTML = HTML;
-  }
-  renderMobile() {
-    let HTML = "";
-
-    for (const dataItem of this.data) {
-      HTML += `<a class="mobile-nav-link" href="${dataItem.href}">${dataItem.text}</a>`;
-    }
-
-    const DOM = document.querySelector(this.selector);
-    DOM.innerHTML = HTML;
+    this.DOM.innerHTML = HTML;
   }
 
   enableMobileNav() {
