@@ -25,36 +25,18 @@
         /></a>
         <nav class="header-navigation hidden visible-lg">
           <ul class="header-list">
-            <li class="list-item flex-align-center">
-              <a class="navigation-link" href="#">Home</a>
-            </li>
-            <li class="list-item flex-align-center">
-              <a class="navigation-link" href="#">About</a>
-            </li>
-            <li class="list-item flex-align-center">
-              <a class="navigation-link" href="#">Services</a>
-            </li>
-            <li class="list-item flex-align-center">
-              <a class="navigation-link" href="#">Portfolio</a>
-            </li>
-            <li class="list-item flex-align-center">
-              <a class="navigation-link" href="#">Pricing</a>
-            </li>
-            <li class="list-item flex-align-center">
-              <a class="navigation-link" href="#">Blog <span class="fa fa-chevron-down chevron-down"></span></a>
-            </li>
-            <li class="list-item flex-align-center">
-              <a class="navigation-link" href="#">Pages <span class="fa fa-chevron-down chevron-down"></span></a>
-            </li>
-            <li class="list-item flex-align-center">
-              <a class="navigation-link" href="#">Contact</a>
-            </li>
+            <!-- <li class="flex-align-center">
+              <a class="navigation-link" href="#">Home</a> -->
           </ul>
         </nav>
       <div class="navigation-hamburger visible hidden-lg">
         <div class="hamburger-bar"></div>
         <div class="hamburger-bar"></div>
         <div class="hamburger-bar"></div>
+      </div>
+      <div class="close-icon hidden">
+        <div class="close">
+        </div>
       </div>
       </div>
     </header>
@@ -240,7 +222,7 @@
         When someone does something that they know that they shouldn’t do, did
         they.
       </p>
-      <div class="row pricing-container">
+      <div class="row">
         <div class="col-lg-3 pricing-box">
           <div class="plan-number">01</div>
           <h3 class="plan-name">Economy</h3>
@@ -429,8 +411,15 @@
    </section>
     
    <!-- footer end -->
-
-
+<div class="mobile-nav-overlay hidden"></div>
+<nav class="mobile-nav">
+  <ul class="mobile-nav-list">
+<!-- <li>
+  <a class="mobile-nav-link" href="#">Home</a>
+</li> -->
+  </ul>
+</nav>
    <script src="./js/pages/home.js" type="module" defer></script>
+      <script src="./js/components/header.js" type="module" defer></script>
   </body>
 </html>

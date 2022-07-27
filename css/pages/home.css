@@ -398,7 +398,11 @@
 
 /* plan start */
 
-.plan .pricing-container > .pricing-box {
+.row.plan {
+  padding: 0 20px;
+}
+
+.plan .row > .pricing-box {
   z-index: 1;
   margin: 10px;
   width: calc(100% - 20px);
@@ -471,7 +475,7 @@
   display: none;
 }
 
-.plan .pricing-container > .pricing-box:hover {
+.plan .row > .pricing-box:hover {
   transform: scale(1.05);
   z-index: 2;
   background: linear-gradient(90deg, #8490ff 0%, #62bdfc 100%);
@@ -489,15 +493,23 @@
 }
 
 @media (min-width: 768px) {
-  .plan .pricing-container > .pricing-box {
+  .plan .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .plan .row > .pricing-box {
     margin: 0;
     margin-bottom: 30px;
-    width: 50%;
+    flex: 0 0 50%;
   }
 }
 
 @media (min-width: 992px) {
-  .plan .pricing-container > .pricing-box {
+  .plan .row {
+    display: inline-block;
+  }
+  .plan .row > .pricing-box {
     width: 25%;
   }
 }

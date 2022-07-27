@@ -1,5 +1,14 @@
-/* header start */
+import { Navigation } from "../components/Header.js";
+import { headerData } from "../data/headerData.js";
 
+/* header start */
+const navigation = new Navigation(".header-list", headerData);
+navigation.renderDesktop();
+navigation.enableMobileNav();
+navigation.navigationShadow();
+
+const mobileNavigation = new Navigation(".mobile-nav-list", headerData);
+mobileNavigation.renderMobile();
 /* header end */
 
 /* hero start */
