@@ -52,9 +52,9 @@ class Stats {
         || obj === null
         || Array.isArray(obj)
         || Object.keys(obj).length !== keysCount) {
-            return false
+            return false;
         }
-        return true
+        return true;
     }*/
 
     isValidString (str) {
@@ -66,7 +66,7 @@ class Stats {
     }
 
     isValidStatsItem(item) {
-        if (//this.isTrueObject(item, 2)
+        if (/*!this.isTrueObject(item, 2)*/
             //ARBA
             typeof item !== 'object'
             || item === null
