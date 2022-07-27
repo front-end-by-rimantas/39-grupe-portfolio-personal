@@ -1,5 +1,5 @@
 import { Navigation } from "../components/Header.js";
-import { Gallery } from "../components/projects.js";
+import { Projects } from "../components/projects.js";
 import { Services } from "../components/services.js";
 import { headerData } from "../data/headerData.js";
 import { projectsData } from "../data/projectsData.js";
@@ -36,7 +36,7 @@ new Services ()
 /* projects start */
 
 
-new Gallery('#projects_block', projectsData);
+new Projects('#projects_block', projectsData);
 
 
 /* projects end */

@@ -1,4 +1,4 @@
-import { projectsData } from "../data/projectsData";
+
 
 class Projects {
     constructor (selector, data){
@@ -10,8 +10,10 @@ class Projects {
     }
 
     init() {
+    
         if (!this.isValidSelector()
             ||!this.isValidData()) {
+             
             return false;
 
         }
@@ -20,16 +22,20 @@ class Projects {
     }
 
     isValidSelector() {
+      
         if (typeof this.selector !== 'string'
         || this.selector ==='') {
+
             return false;
         }
         this.DOM = document.querySelector(this.selector);
+   
         return !!this.DOM;
     }
 
     isValidData() {
-        return !Array.isArray(this.data) && this.data.length;
+  
+        return Array.isArray(this.data) && this.data.length;
     }
 
     filterHTML() {
@@ -57,6 +63,7 @@ class Projects {
     }
 
     render() {
+    
         this.DOM.innerHTML = `<div class="filter">${this.filterHTML()}</div>
                               <div class="list">${this.listHTML()}</div>`;
 
@@ -64,4 +71,4 @@ class Projects {
     }
 }
 
-export { Gallery }
+export { Projects }
