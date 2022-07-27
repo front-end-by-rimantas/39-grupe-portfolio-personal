@@ -402,7 +402,6 @@
   background-color: var(--section-background);
   padding: 32px 10px;
   cursor: pointer;
-  /* transition: ease-in all 0.2s; */
 }
 
 .section-description {
@@ -469,6 +468,7 @@
 }
 
 .plan .row > .pricing-box:hover {
+  transition: all 0.3s;
   transform: scale(1.05);
   z-index: 2;
   background: linear-gradient(90deg, #8490ff 0%, #62bdfc 100%);
@@ -484,6 +484,8 @@
   color: #fff;
   transition: all 0.3s;
 }
+
+/* HOVER EFFECT END */
 
 @media (min-width: 768px) {
   .plan .row {
@@ -506,7 +508,6 @@
     width: 25%;
   }
 }
-/* HOVER EFFECT END */
 
 /* plan end */
 

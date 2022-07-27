@@ -4,6 +4,11 @@
       -FONT SIZE SYSTEM (px)
       10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
 
+.header .row .header-navigation {
+  align-items: center;
+  gap: 24px;
+}
+
 .container.header {
   transition: all 0.3s;
   background-color: #fff;
@@ -16,13 +21,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header-list {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  list-style: none;
 }
 
 .header .navigation-link {
@@ -92,8 +90,8 @@
   transform: rotate(-45deg);
 }
 
-.header-list > li:first-child > a,
-.mobile-nav-list > li:first-child > a {
+.header-navigation .navigation-link:first-child,
+.mobile-nav .mobile-nav-link:first-child {
   color: var(--main-purple);
 }
 
@@ -102,10 +100,6 @@
 }
 
 /* MOBILE NAV START*/
-
-.mobile-nav-list {
-  list-style: none;
-}
 
 .mobile-nav {
   position: fixed;
@@ -125,7 +119,7 @@
   left: 0;
 }
 
-.mobile-nav-list {
+.mobile-nav {
   display: flex;
   flex-direction: column;
   gap: 24px;

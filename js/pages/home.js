@@ -2,12 +2,12 @@ import { Navigation } from "../components/Header.js";
 import { headerData } from "../data/headerData.js";
 
 /* header start */
-const navigation = new Navigation(".header-list", headerData);
+const navigation = new Navigation(".header-navigation", headerData);
 navigation.renderDesktop();
 navigation.enableMobileNav();
 navigation.navigationShadow();
 
-const mobileNavigation = new Navigation(".mobile-nav-list", headerData);
+const mobileNavigation = new Navigation(".mobile-nav", headerData);
 mobileNavigation.renderMobile();
 /* header end */
 

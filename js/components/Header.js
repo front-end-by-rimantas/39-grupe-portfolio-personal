@@ -8,9 +8,7 @@ class Navigation {
     let HTML = "";
 
     for (const dataItem of this.data) {
-      HTML += `<li class="flex-align-center">
-              <a class="navigation-link" href="${dataItem.href}">${dataItem.text}</a>
-            </li>`;
+      HTML += `<a class="navigation-link flex-align-center" href="${dataItem.href}">${dataItem.text}</a>`;
     }
     const DOM = document.querySelector(this.selector);
     DOM.innerHTML = HTML;
@@ -19,7 +17,7 @@ class Navigation {
     let HTML = "";
 
     for (const dataItem of this.data) {
-      HTML += `<li><a class="mobile-nav-link" href="${dataItem.href}">${dataItem.text}</a></li>`;
+      HTML += `<a class="mobile-nav-link" href="${dataItem.href}">${dataItem.text}</a>`;
     }
 
     const DOM = document.querySelector(this.selector);
@@ -62,7 +60,7 @@ class Navigation {
     const navEl = document.querySelector(".header");
 
     window.onscroll = function () {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 100) {
         navEl.classList.add("scrolled-navigation");
       } else {
         navEl.classList.remove("scrolled-navigation");
