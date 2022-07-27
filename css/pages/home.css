@@ -27,6 +27,12 @@
   text-align: center;
 }
 
+@media (min-width: 992px) {
+  .services {
+    padding-top: 10px;
+  }
+}
+
 .services > .row > .services-tittle {
   margin-bottom: 2px;
 }
@@ -63,6 +69,7 @@
 .services > .row > .single-service:hover .service-icon {
   transition: all 0.2s;
   background: var(--main-gradient);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
