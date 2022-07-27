@@ -4,7 +4,7 @@
 @import "../base/layout.css";
 /* 3rd-party */
 
-@import '../3rd-party/font-awesome.min.css';
+@import "../3rd-party/font-awesome.min.css";
 
 /* components */
 @import "../components/button.css";
@@ -16,93 +16,85 @@
 /* hero start */
 
 .hero {
-    background-color: #f9f9ff;
-    padding-top: 20px;
-    padding-bottom: 0;
+  background-color: #f9f9ff;
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin-bottom: 120px;
 }
 
 .title {
-    margin-top: 0px;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .name {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .description {
-    padding: 25px 0;
+  padding: 25px 0;
 }
 
 .btn {
-    font-size: 14px;
-    text-decoration: none;
-    padding: 12px 24px;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 12px 24px;
 }
 
-
 @media (max-width: 768px) {
-   .container > .hero-row > .hero-img {
-    margin: auto;    
+  .container > .hero-row > .hero-img {
+    margin: auto;
     width: 65%;
     margin-left: 50%;
     transform: translateX(-50%);
-    }
+  }
 }
 
 @media (min-width: 768px) {
-    .title {
-        margin-top: 105px;
-    }
+  .title {
+    margin-top: 105px;
+  }
 }
 
-@media (min-width: 1400px) {
-    h1 {
-        font-size: 60px;
-    }
+@media (min-width: 992px) {
+  h1 {
+    font-size: 60px;
+  }
 }
 
 /* hero end */
-
 
 /* about start */
 
 /* about end */
 
-
 /* services start */
 
 /* services end */
-
 
 /* stats start */
 
 /* stats end */
 
-
 /* projects start */
 
 /* projects end */
-
 
 /* feedback start */
 
 /* feedback end */
 
-
 /* plan start */
 
 /* plan end */
 
-
 /* blog start */
 
 /* blog start */
-
 
 /* brands start */
 
