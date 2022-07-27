@@ -5,6 +5,10 @@
       10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
 
 .container.header {
+  transition: all 0.3s;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
   padding: 12px 0;
 }
 
@@ -93,6 +97,10 @@
   color: var(--main-purple);
 }
 
+.scrolled-navigation {
+  box-shadow: -20px 20px 30px 0 rgb(158, 158, 158, 0.3);
+}
+
 /* MOBILE NAV START*/
 
 .mobile-nav-list {
@@ -100,15 +108,21 @@
 }
 
 .mobile-nav {
+  position: fixed;
+  transition: all 0.5s;
+  left: -100%;
   display: block;
   z-index: 998;
-  position: fixed;
   height: 100vh;
   padding: 24px 16px 24px 16px;
   top: 0;
   /* bottom: 0; */
   width: 240px;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.active {
+  left: 0;
 }
 
 .mobile-nav-list {
@@ -118,6 +132,7 @@
 }
 
 .mobile-nav-link {
+  position: relative;
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -129,7 +144,8 @@
 }
 
 .mobile-nav span {
-  margin-left: 155px;
+  position: absolute;
+  right: 8px;
   color: #fff;
   font-size: 12px;
 }
