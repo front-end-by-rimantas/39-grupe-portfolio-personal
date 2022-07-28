@@ -5,6 +5,7 @@ class Projects {
         this.selector = selector;
         this.data = data;
         this.DOM = null;
+        this.lightboxEnabled = false;
 
         this.init ();
     }
@@ -40,13 +41,13 @@ class Projects {
 
     filterHTML() {
         const allTags = ['All'];
-        let HTML = '';
+        let HTML = `<div class="item active">${allTags[0]}</div>`;
 
         for (const item of this.data) {
             for (const tag of item.tags) {
                 if (!allTags.includes (tag)){
                     allTags.push(tag);
-                    HTML += `<div class="item">${tag}</div>`
+                    HTML += `<div class="item">${tag}</div>`;
                 }
                 
             }
@@ -59,16 +60,34 @@ class Projects {
     listHTML() {
         let HTML = 'GALLERY LIST CONTENT';
 
-        return HTML 
+        for (const item of this.data) {
+            let actionsHTML = '';
+
+            if (this.lightboxEnabled) {
+                actionsHTML += '<i class="fa fa-binoculars"></i>';
+
+            }
+
+            HTML += `<div class="card">
+                        <img src="./img/project-filter/${item.img}" alt="Image">
+                        <div class="overlay">
+                            <p>${item.title}</p>
+                            ${actionsHTML ? `<div class="actions">${actionsHTML}</div>` : ''}
+                        </div>
+                    </div>`;
+        }
+
+        return HTML;
     }
 
     render() {
-    
-        this.DOM.innerHTML = `<div class="filter">${this.filterHTML()}</div>
+
+            this.DOM.innerHTML = `<div class="filter">${this.filterHTML()}</div>
                               <div class="list">${this.listHTML()}</div>`;
 
 
     }
-}
+    }
+
 
 export { Projects }

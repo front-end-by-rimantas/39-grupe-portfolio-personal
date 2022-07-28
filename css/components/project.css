@@ -1,0 +1,15 @@
+.gallery {}
+.gallery > .filter {}
+.gallery > .filter > .item {}
+.gallery > .filter > .item :hover {}
+.gallery > .filter > .item :active {}
+.gallery > .list {}
+.gallery > .list > .card {}
+.gallery > .list > .card > .img {}
+.gallery > .list > .card > .overlay {}
+.gallery > .list > .card:hover > .overlay {}
+.gallery > .list > .card > .overlay > p {}
+.gallery > .list > .card > .overlay > .actions {}
+.gallery > .list > .card > .overlay > .actions > i {}
+.gallery > .list > .card > .overlay > .actions > i:hover {}
+
