@@ -315,44 +315,51 @@
 
 /* brands start */
 
-.brands {
-  width: 100%;
-}
 
 .brands.main {
-    display: flex;
-    justify-content: center;
+
     background: linear-gradient(to right, #8490ff, #62bdfc);
-    /* background-color: #8490ff; */
     width: 100%;
     padding: 80px 0px;
 
 }
 
 .brandswrap {
-    opacity: 0.5; 
+    display: flex;
+    justify-content: center;
+    opacity: 1; 
     height: 70px;
     gap: 25px;
 
 }
 
 .brandswrap img {
-
-padding: 0px 25px;
+    padding: 0px 25px;
 }
-
-/* .brandswrap:hover .fa-binoculars {
-    display: block;
-} */
-
-/* .brandswrap.img:hover {
-    opacity: 50%;  
-} */
 
 .brandswrap a:hover {
-    
-    opacity: revert;
+    opacity: 0.5;
 }
 
+@media (max-width: 768px) {
+  .brandswrap > .ione, .itwo, .ithree
+  { 
+    display: none;
+ }
+} 
+
+@media (max-width: 992px) {
+  .brandswrap > .ione, .itwo
+  {
+   display: none;
+ }
+}
+
+@media (max-width: 1200px) {
+  .brandswrap > .ione
+  {
+   display: none;
+ }
+}
 
 /* brands end */
