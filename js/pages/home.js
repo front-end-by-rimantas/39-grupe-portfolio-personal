@@ -1,18 +1,15 @@
 import { Navigation } from "../components/Header.js";
 import { headerData } from "../data/headerData.js";
+import { headerDataMob } from "../data/headerData.js";
 import { Stats } from "../components/Stats.js";
 import { statsData } from "../data/statsData.js";
 import { Services } from "../components/Services.js";
 import { servicesData } from "../data/servicesData.js";
 
 /* header start */
-const navigation = new Navigation(".header-list", headerData);
-navigation.renderDesktop();
-navigation.enableMobileNav();
-navigation.navigationShadow();
+new Navigation(".header-navigation", headerData);
 
-const mobileNavigation = new Navigation(".mobile-nav-list", headerData);
-mobileNavigation.renderMobile();
+new Navigation(".mobile-nav", headerDataMob);
 /* header end */
 
 /* hero start */
