@@ -86,20 +86,20 @@ class Blogs {
     }
 
     isValidBlogItem(item) {
-        if (this.isTrueObject(item, 9)
-            || this.isValidString(item.img)
-            || this.isValidString(item.imgAlt)
-            || this.isValidString(item.authorImg)
-            || this.isValidString(item.authorName)
-            || this.isValidString(item.postDate)
-            || this.isValidString(item.likesCount)
-            || this.isValidString(item.commentsCount)
-            || this.isValidString(item.tittle)
-            || this.isValidString(item.desc))
+        if (!this.isTrueObject(item, 9)
+            || !this.isValidString(item.img)
+            || !this.isValidString(item.imgAlt)
+            || !this.isValidString(item.authorImg)
+            || !this.isValidString(item.authorName)
+            || !this.isValidString(item.postDate)
+            || !this.isValidString(item.likesCount)
+            || !this.isValidString(item.commentsCount)
+            || !this.isValidString(item.tittle)
+            || !this.isValidString(item.desc))
              {
-            return true;
+            return false;
         }
-        return false;
+        return true;
     }
 
     render() {
@@ -118,7 +118,7 @@ class Blogs {
             <div class="about-blog">
               <div class="about-blog-author">
                 <img class="blog-author-img" src="./img/${blogItem.authorImg}" alt="Author">
-                <a href="#">
+                <a href="#" target=_blank>
                   <span class="blog-author-name">${blogItem.authorName}</span>
                 </a>
               </div>
@@ -132,7 +132,7 @@ class Blogs {
                   ${blogItem.commentsCount}</span>
               </div>
             </div>
-            <a href="#">
+            <a href="#" target=_blank>
               <h3 class="blog-post-tittle">${blogItem.tittle}</h3>
             </a>
             <p class="blog-post-description">${blogItem.desc}</p>
