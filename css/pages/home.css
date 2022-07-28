@@ -316,9 +316,6 @@
 /* brands start */
 
 .brands {
-    width: 100%;
-    border: red 1px;
-
 }
 
 .brands.main {
@@ -338,6 +335,11 @@
 
 }
 
+.brandswrap img {
+
+padding: 0px 25px;
+}
+
 /* .brandswrap:hover .fa-binoculars {
     display: block;
 } */
@@ -348,7 +350,7 @@
 
 .brandswrap a:hover {
     
-    opacity: 1;
+    opacity: revert;
 }
 
 
