@@ -2,6 +2,8 @@ import { Navigation } from "../components/Header.js";
 import { headerData } from "../data/headerData.js";
 import { Stats } from "../components/Stats.js";
 import { statsData } from "../data/statsData.js";
+import { Services } from "../components/Services.js";
+import { servicesData } from "../data/servicesData.js";
 
 /* header start */
 const navigation = new Navigation(".header-list", headerData);
@@ -22,6 +24,8 @@ mobileNavigation.renderMobile();
 /* about end */
 
 /* services start */
+
+new Services('#services_block', servicesData);
 
 /* services end */
 
