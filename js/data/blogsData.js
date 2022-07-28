@@ -1,8 +1,8 @@
 const blogsData = [
     {
-        img: 'xb1.jpg.pagespeed.ic.kt2tbOEfuO.webp',
+        img: './img/xb1.jpg.pagespeed.ic.kt2tbOEfuO.webp',
         imgAlt: 'City',
-        authorImg: 'xuser.png.pagespeed.ic.3Cyb7EkxkK.webp',
+        authorImg: './img/xuser.png.pagespeed.ic.3Cyb7EkxkK.webp',
         authorName: 'Mark Wiens',
         postDate: '13th Dec',
         likesCount: '15',
@@ -11,9 +11,9 @@ const blogsData = [
         desc: 'Dream interpretation has many forms; it can be done be done for the sake of fun, hobby or can be taken up as a serious career.',
     },
     {
-        img: 'xb2.jpg.pagespeed.ic.1fF1ZaIF9t.webp',
+        img: './img/xb2.jpg.pagespeed.ic.1fF1ZaIF9t.webp',
         imgAlt: 'Woods',
-        authorImg: 'xuser.png.pagespeed.ic.3Cyb7EkxkK.webp',
+        authorImg: './img/xuser.png.pagespeed.ic.3Cyb7EkxkK.webp',
         authorName: 'Mark Wiens',
         postDate: '13th Dec',
         likesCount: '15',
@@ -22,9 +22,9 @@ const blogsData = [
         desc: 'You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, then the chances of improving.',
     },
     {
-        img: 'xb3.jpg.pagespeed.ic.cnBcpWJLtb.webp',
+        img: './img/xb3.jpg.pagespeed.ic.cnBcpWJLtb.webp',
         imgAlt: 'City',
-        authorImg: 'xuser.png.pagespeed.ic.3Cyb7EkxkK.webp',
+        authorImg: './img/xuser.png.pagespeed.ic.3Cyb7EkxkK.webp',
         authorName: 'Mark Wiens',
         postDate: '13th Dec',
         likesCount: '15',

@@ -113,11 +113,11 @@ class Blogs {
 
             blogsHTML += `<div class="blog-post col-12 col-sm-12 col-md-4">
             <div class="img-box">
-              <img class="blog-img" src="./img/${blogItem.img}" alt="${blogItem.imgAlt}">
+              <img class="blog-img" src="${blogItem.img}" alt="${blogItem.imgAlt}">
             </div>
             <div class="about-blog">
               <div class="about-blog-author">
-                <img class="blog-author-img" src="./img/${blogItem.authorImg}" alt="Author">
+                <img class="blog-author-img" src="${blogItem.authorImg}" alt="Author">
                 <a href="#" target=_blank>
                   <span class="blog-author-name">${blogItem.authorName}</span>
                 </a>
