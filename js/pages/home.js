@@ -1,4 +1,6 @@
+import { Blogs } from "../components/Blogs.js";
 import { Navigation } from "../components/Header.js";
+import { blogsData } from "../data/blogsData.js";
 import { headerData } from "../data/headerData.js";
 import { headerDataMob } from "../data/headerData.js";
 import { Stats } from "../components/Stats.js";
@@ -52,6 +54,8 @@ if (stats.isValidSelector()
 /* plan end */
 
 /* blog start */
+
+new Blogs('#blogs_block', blogsData) ; 
 
 /* blog end */
 
