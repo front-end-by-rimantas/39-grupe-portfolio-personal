@@ -33,7 +33,42 @@ class Navigation {
   }
 
   isValidData() {
-    if (!Array.isArray(this.data)) {
+    if (!Array.isArray(this.data) && this.data.length === 0) {
+      return false;
+    }
+    return true;
+  }
+
+  isTrueObject(obj, keysCount = 1) {
+    if (
+      typeof obj !== "object" ||
+      obj === null ||
+      Array.isArray(obj) ||
+      Object.keys(obj).length !== keysCount
+    ) {
+      return false;
+    }
+    return true;
+  }
+
+  isValidString(str, size = 50) {
+    if (
+      typeof str !== "string" ||
+      str.trim() === "" ||
+      str.trim().length > size
+    ) {
+      return false;
+    }
+    return true;
+  }
+
+  isValidNavItem(item) {
+    if (
+      !this.isTrueObject(item, 3) ||
+      !this.isValidString(item.class) ||
+      !this.isValidString(item.href) ||
+      !this.isValidString(item.text, 70)
+    ) {
       return false;
     }
     return true;
@@ -42,8 +77,11 @@ class Navigation {
   render() {
     let HTML = "";
 
-    for (const dataItem of this.data) {
-      HTML += `<a class="${dataItem.class}" href="${dataItem.href}">${dataItem.text}</a>`;
+    for (const navItem of this.data) {
+      if (!this.isValidNavItem(navItem)) {
+        continue;
+      }
+      HTML += `<a class="${navItem.class}" href="${navItem.href}">${navItem.text}</a>`;
     }
     this.DOM.innerHTML = HTML;
   }
