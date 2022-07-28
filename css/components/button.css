@@ -1,6 +1,7 @@
 .btn {
-      font-size: 16px;
+    font-size: 16px;
     padding: 16px 32px;
+    background-color: var(--main-purple);
     background-image: linear-gradient(to right, #8490ff, #62bdfc);
     color: white;
     border: none;
@@ -9,5 +10,5 @@
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0px 4px 8px rgb(132 144 255 / 30%);
+    box-shadow: 0px 4px 8px rgb(132, 144, 255, 0.3);
 }

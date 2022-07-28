@@ -1,0 +1,70 @@
+.footer {
+    background-color: #04091E;
+}
+
+.footer-h3 {
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.footer p {
+    margin-bottom: 12px;
+}
+
+.footer span {
+    line-height: 1.7;
+}
+
+.footer .footer-about-me a {
+    color: var(--main-purple);
+    text-decoration: none;
+}
+
+.footer-form {
+    display: flex;
+    width: 100%;
+    height: 46px;
+}
+
+.footer-form input {
+    width:100%;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: inherit;
+    padding-left: 20px;
+    border: none;
+}
+
+.footer-form input:focus {
+    outline: none;
+    font-weight: 200;
+}
+
+.footer-form input:focus::placeholder {
+    color: transparent;
+}
+
+.submit {
+    width: 56px;
+    border: none;
+    background-color: var(--main-purple);
+    color: #fff;
+    cursor: pointer;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;  
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.social-links a {
+    color:#fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social-links a:hover {
+    color: var(--main-purple);
+}
