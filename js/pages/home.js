@@ -7,6 +7,8 @@ import { Stats } from "../components/Stats.js";
 import { statsData } from "../data/statsData.js";
 import { Services } from "../components/Services.js";
 import { servicesData } from "../data/servicesData.js";
+import { Plans } from "../components/Plans.js";
+import { plansData } from "../data/plansData.js";
 
 /* header start */
 new Navigation(".header-navigation", headerData);
@@ -24,12 +26,12 @@ new Navigation(".mobile-nav", headerDataMob);
 
 /* services start */
 
-new Services('#services_block', servicesData);
+new Services("#services_block", servicesData);
 
 /* services end */
 
 /* stats start */
-new Stats('#stats_block', statsData);
+new Stats("#stats_block", statsData);
 
 /*Galima naudoti vietoje init Stats.js faile
 const stats = new Stats('#stats_block');
@@ -37,7 +39,6 @@ if (stats.isValidSelector()
     && stats.findTargetElement()) {
     stats.render();
     }*/
-
 
 /* stats end */
 
@@ -50,6 +51,8 @@ if (stats.isValidSelector()
 /* feedback end */
 
 /* plan start */
+
+new Plans("#plans-row", plansData);
 
 /* plan end */
 
