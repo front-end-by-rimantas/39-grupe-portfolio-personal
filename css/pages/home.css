@@ -214,6 +214,10 @@
   text-align: center;
 }
 
+.stats .number {
+  transition: all 1s;
+}
+
 @media (max-width: 768px) {
   .stats > .row > .stats-content {
     margin-bottom: 32px;
@@ -225,66 +229,65 @@
 /* projects start */
 
 .projects > .heading {
-    text-align: center;
-    padding: 70px 0px 70px;
+  text-align: center;
+  padding: 70px 0px 70px;
 }
 
 .projects .gallery {
-    padding: 25px 0px 70px;
-    text-align: center;
+  padding: 25px 0px 70px;
+  text-align: center;
 }
 
 .projects img {
-    width: 100%;
+  width: 100%;
 }
 
 .imgbox {
-    display: inline-block;
+  display: inline-block;
 }
 
 .imgbox .imgwrap {
-    position: relative;
-    margin-bottom: 1rem;
-    background: var(--main-gradient);
-    border-radius: 10px;
+  position: relative;
+  margin-bottom: 1rem;
+  background: var(--main-gradient);
+  border-radius: 10px;
 }
 
 .projects .links {
-    display: flex;
-    justify-content: center;    
-    gap: 1.5em;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
 }
 
 .projects a {
-    word-spacing: 1em;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 0.7em;
-    font-weight: 500;
-    color: var(--main-black);
+  word-spacing: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.7em;
+  font-weight: 500;
+  color: var(--main-black);
 }
 
 .fa-binoculars {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 3rem;
-    color: #fff;
-    transform: translate(-50%,-50%);    
-
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  color: #fff;
+  transform: translate(-50%, -50%);
 }
 
 .imgwrap:hover .fa-binoculars {
-    display: block;
+  display: block;
 }
 
 .projects a:hover {
-    color: var(--main-purple);
+  color: var(--main-purple);
 }
 
 .projects img:hover {
-    opacity: 20%;  
+  opacity: 20%;
 }
 
 .
