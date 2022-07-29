@@ -696,4 +696,53 @@
 
 /* brands start */
 
+
+.brands.main {
+    background: linear-gradient(to right, #8490ff, #62bdfc);
+    width: 100%;
+    padding: 80px 0px;
+}
+
+.brands .brandswrap {
+  display: flex;
+  justify-content: center;
+}
+
+.brandswrap img {
+    opacity: .5; 
+    height: 70px;
+    gap: 25px;
+}
+
+.brandswrap img {
+    padding: 0px 50px;
+}
+
+.brandswrap img:hover {
+    opacity: 1;
+    transition: 0.3s;
+
+}
+
+@media (max-width: 768px) {
+  .brandswrap > .ione, .itwo, .ithree
+  { 
+    display: none;
+ }
+} 
+
+@media (max-width: 992px) {
+  .brandswrap > .ione, .itwo
+  {
+   display: none;
+ }
+}
+
+@media (max-width: 1200px) {
+  .brandswrap > .ione
+  {
+   display: none;
+ }
+}
+
 /* brands end */
