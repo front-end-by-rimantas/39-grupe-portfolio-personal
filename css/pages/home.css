@@ -214,6 +214,10 @@
   text-align: center;
 }
 
+.stats .number {
+  transition: all 1s;
+}
+
 @media (max-width: 768px) {
   .stats > .row > .stats-content {
     margin-bottom: 32px;
@@ -226,11 +230,13 @@
 
 .projects > .heading {
   text-align: center;
+
   margin-bottom: 70px;
 }
 
 .projects .gallery {
   padding: 40px 0px 0px;
+  
   text-align: center;
 }
 
