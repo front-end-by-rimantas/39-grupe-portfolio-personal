@@ -156,7 +156,7 @@
 
 @media (min-width: 992px) {
   .services {
-    padding-top: 10px;
+    padding-top: 120px;
   }
 }
 
@@ -230,11 +230,13 @@
 
 .projects > .heading {
   text-align: center;
-  padding: 70px 0px 70px;
+
+  margin-bottom: 70px;
 }
 
 .projects .gallery {
-  padding: 25px 0px 70px;
+  padding: 40px 0px 0px;
+  
   text-align: center;
 }
 
@@ -289,8 +291,6 @@
 .projects img:hover {
   opacity: 20%;
 }
-
-.
 
 /* projects end */
 
