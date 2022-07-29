@@ -317,28 +317,30 @@
 
 
 .brands.main {
-
     background: linear-gradient(to right, #8490ff, #62bdfc);
     width: 100%;
     padding: 80px 0px;
-
 }
 
-.brandswrap {
-    display: flex;
-    justify-content: center;
-    opacity: 1; 
-    height: 70px;
-    gap: 25px;
-
+.brands .brandswrap {
+  display: flex;
+  justify-content: center;
 }
 
 .brandswrap img {
-    padding: 0px 25px;
+    opacity: .5; 
+    height: 70px;
+    gap: 25px;
 }
 
-.brandswrap a:hover {
-    opacity: 0.5;
+.brandswrap img {
+    padding: 0px 50px;
+}
+
+.brandswrap img:hover {
+    opacity: 1;
+    transition: 0.3s;
+
 }
 
 @media (max-width: 768px) {
